@@ -5,20 +5,17 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatActivity
-import fr.tciles.sportzone.R
+import fr.tciles.sportzone.databinding.FragmentRunningBinding
 
 class RunningFragment : Fragment() {
+    private lateinit var binding: FragmentRunningBinding
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val view: View = inflater.inflate(R.layout.fragment_running, container, false)
+        binding = FragmentRunningBinding.inflate(layoutInflater, container, false)
 
-        // (activity as AppCompatActivity?)!!.supportActionBar!!.setDisplayShowCustomEnabled(false)
-        // (activity as AppCompatActivity?)!!.supportActionBar!!.setDisplayHomeAsUpEnabled(true)
-        // (activity as AppCompatActivity?)!!.supportActionBar!!.title = "Running"
-
-        return view
+        return binding.root
     }
 }
