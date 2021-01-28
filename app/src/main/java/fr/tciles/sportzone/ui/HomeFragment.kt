@@ -36,19 +36,24 @@ class HomeFragment : Fragment() {
 
         val viewPager: ViewPager2 = view.findViewById(R.id.vp_home)
         val viewPagerAdapter: ViewPagerHomeAdapter? = activity?.let {
-            ViewPagerHomeAdapter(it, listOf(
+            ViewPagerHomeAdapter(
+                it, listOf(
+                    ProfileFragment(),
                     RunningFragment(),
                     CyclingFragment()
-            ), listOf(
+                ), listOf(
+                    "Profile",
                     "Running",
                     "Cycling",
-            ))
+                )
+            )
         }
         viewPager.adapter = viewPagerAdapter
 
         val tabIcons: List<Int> = listOf(
-                R.drawable.ic_baseline_directions_run_24,
-                R.drawable.ic_baseline_directions_bike_24
+            R.drawable.ic_baseline_person_24,
+            R.drawable.ic_baseline_directions_run_24,
+            R.drawable.ic_baseline_directions_bike_24
         )
 
         val tabLayout: TabLayout = view.findViewById(R.id.tab_layout_home)
