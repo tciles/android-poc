@@ -9,16 +9,14 @@
     android:padding="16dp"
     tools:context=".ui.HomeFragment">
 
-    <Button
-        android:id="@+id/btn_go_cycling"
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout_home"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="Cycling" />
+        android:layout_height="wrap_content"/>
 
-    <Button
-        android:id="@+id/btn_go_running"
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vp_home"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="Running" />
+        android:layout_height="match_parent" />
 
 </LinearLayout>

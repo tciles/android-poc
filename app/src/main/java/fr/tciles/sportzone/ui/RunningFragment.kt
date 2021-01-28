@@ -15,9 +15,9 @@ class RunningFragment : Fragment() {
     ): View {
         val view: View = inflater.inflate(R.layout.fragment_running, container, false)
 
-        (activity as AppCompatActivity?)!!.supportActionBar!!.setDisplayShowCustomEnabled(false)
-        (activity as AppCompatActivity?)!!.supportActionBar!!.setDisplayHomeAsUpEnabled(true)
-        (activity as AppCompatActivity?)!!.supportActionBar!!.title = "Running"
+        // (activity as AppCompatActivity?)!!.supportActionBar!!.setDisplayShowCustomEnabled(false)
+        // (activity as AppCompatActivity?)!!.supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+        // (activity as AppCompatActivity?)!!.supportActionBar!!.title = "Running"
 
         return view
     }
