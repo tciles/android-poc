@@ -1,4 +1,5 @@
 # Android POC
 
-
-![Preview](preview.jpg)
+<img src="preview.jpg"
+     alt="Preview"
+     style="max-width: 500px;" />
