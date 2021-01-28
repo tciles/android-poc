@@ -64,6 +64,7 @@
                         android:textSize="16sp" />
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/text_input_pma"
                         android:layout_width="60dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -104,6 +105,7 @@
                         android:textSize="16sp" />
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/text_input_ftp"
                         android:layout_width="60dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -172,6 +174,7 @@
                         android:textSize="16sp" />
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/text_input_vma"
                         android:layout_width="60dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
