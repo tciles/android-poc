@@ -2,4 +2,5 @@
 
 <img src="preview.jpg"
      alt="Preview"
-     style="max-width: 500px;" />
+     height="500"
+     style="max-height: 500px;" />
