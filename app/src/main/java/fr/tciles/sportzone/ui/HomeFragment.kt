@@ -1,5 +1,6 @@
 package fr.tciles.sportzone.ui
 
+import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -45,9 +46,15 @@ class HomeFragment : Fragment() {
         }
         viewPager.adapter = viewPagerAdapter
 
+        val tabIcons: List<Int> = listOf(
+                R.drawable.ic_baseline_directions_run_24,
+                R.drawable.ic_baseline_directions_bike_24
+        )
+
         val tabLayout: TabLayout = view.findViewById(R.id.tab_layout_home)
         TabLayoutMediator(tabLayout, viewPager) { tab, position ->
             tab.text = (viewPager.adapter as ViewPagerHomeAdapter).fragmentsTitles[position]
+            tab.setIcon(tabIcons[position])
         }.attach()
     }
 }
