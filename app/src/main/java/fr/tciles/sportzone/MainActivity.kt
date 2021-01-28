@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
     private fun init() {
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
-        supportActionBar?.title = "Zones"
+        supportActionBar?.title = resources.getString(R.string.app_name)
     }
 
     override fun onSupportNavigateUp(): Boolean {
