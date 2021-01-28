@@ -6,6 +6,6 @@
         android:id="@+id/save_menu_item"
         android:icon="@drawable/ic_baseline_save_24"
         android:orderInCategory="10"
-        android:title="Save"
+        android:title="@string/text_save"
         app:showAsAction="ifRoom" />
 </menu>

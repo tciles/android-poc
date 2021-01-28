@@ -10,7 +10,6 @@ import fr.tciles.sportzone.R
 import fr.tciles.sportzone.databinding.FragmentHomeBinding
 import fr.tciles.sportzone.ui.adapter.ViewPagerHomeAdapter
 
-
 class HomeFragment : Fragment() {
     private lateinit var binding: FragmentHomeBinding
 

@@ -1,16 +1,11 @@
 package fr.tciles.sportzone.ui
 
-import android.graphics.Color
+import android.content.Context
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
-import android.util.Log
 import android.view.*
+import android.view.inputmethod.InputMethodManager
 import androidx.fragment.app.Fragment
-import android.widget.Button
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
 import fr.tciles.sportzone.R
@@ -45,7 +40,14 @@ class ProfileFragment : Fragment() {
         return super.onOptionsItemSelected(item)
     }
 
+    private fun hideKeyboard() {
+        val imm: InputMethodManager = activity?.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+        imm.hideSoftInputFromWindow(binding.root.windowToken, 0)
+    }
+
     private fun save() {
+        hideKeyboard()
+
         val strVma = binding.textInputVma.text.toString()
 
         if (strVma.isNotEmpty()) {

@@ -2,4 +2,12 @@
     <string name="app_name">SportZone</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_map">MAP</string>
+    <string name="text_watts">Watts</string>
+    <string name="text_ftp">FTP</string>
+    <string name="text_cycling">CYCLING</string>
+    <string name="text_running">RUNNING</string>
+    <string name="text_vma">VMA</string>
+    <string name="text_kmh">Km/h</string>
+    <string name="text_save">Save</string>
 </resources>
